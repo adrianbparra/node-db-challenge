@@ -4,9 +4,9 @@ exports.up = function(knex) {
         knex.schema
             .createTable("projects", tbl => {
                 tbl.increments("id")
-                tbl.string("name").notNullable().unique()
+                tbl.string("name").notNullable()
                 tbl.text("description")
-                tbl.boolean("complete").defaultTo(false)
+                tbl.boolean("complete").defaultTo(false).notNullable()
             })
             .createTable("tasks", tbl => {
                 tbl.increments("id")
@@ -19,11 +19,11 @@ exports.up = function(knex) {
                     .inTable("projects")
                     .onDelete("CASCADE")
                     .onUpdate("CASCADE")
-                tbl.boolean("complete").defaultTo(false)
+                tbl.boolean("complete").defaultTo(false).notNullable()
             })
             .createTable("resources", tbl => {
                 tbl.increments("id")
-                tbl.string("name").notNullable()
+                tbl.string("name").notNullable().unique()
                 tbl.text("description")
                 tbl.integer("project_id")
                     .notNullable()
