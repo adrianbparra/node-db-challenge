@@ -40,11 +40,19 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 - [ ] Explain the difference between `Relational Databases` and `SQL`.
 
+  SQL is the standard language on how to manage am relational database
+
 - [ ] Why do tables need a `primary key`?
+
+A primary key is a way to identify each entry in the database uniquely.
 
 - [ ] What is the name given to a table column that references the primary key on another table.
 
+Foreign Key is the name of the field that references the primary key on another table. 
+
 - [ ] What do we need in order to have a _many to many_ relationship between two tables.
+
+We need an intermediary table that holds the foreign key referencing to the primary key on the related table.
 
 ## Minimum Viable Product
 
