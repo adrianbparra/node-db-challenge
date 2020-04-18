@@ -1,0 +1,34 @@
+{
+  "name": "db-challenge",
+  "version": "1.0.0",
+  "description": "Sprint Challenge for API: NODE",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrianbparra/node-db-challenge.git"
+  },
+  "keywords": [
+    "node",
+    "database",
+    "sql",
+    "sqlite3",
+    "relational"
+  ],
+  "author": "Adrian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adrianbparra/node-db-challenge/issues"
+  },
+  "homepage": "https://github.com/adrianbparra/node-db-challenge#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "knex": "^0.20.15",
+    "sqlite3": "^4.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
